@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+    <title>PINE intro</title>
+
+    <link rel="icon" href="img/pine_title.ico" type="image/x-icon" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Mobland - Mobile App Landing Page Template">
+
+    <!-- Font -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+
+    <!-- public css-->
+    <link rel="stylesheet" href="css/public/bootstrap.min.css">
+    <link rel="stylesheet" href="css/public/themify-icons.css">
+    <link rel="stylesheet" href="css/public/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/public/fSelect.css">
+    <link rel="stylesheet" href="css/public/jquery.dynatable.css">
+
+
+    <!-- Main css -->
+    <link href="css/demo_style.css" rel="stylesheet">
+
+    <!-- js -->
+    <!-- public javascript -->
+    <script src="js/public/jquery-3.3.1.min.js"></script>
+    <script src="js/public/bootstrap.min.js"></script>
+    <script src="js/public/bootstrap.bundle.min.js"></script>
+    <script src="js/public/owl.carousel.min.js"></script>
+    <script src="js/public/jquery.dynatable.js"></script>
+    <script src="js/public/fSelect.js"></script>
+    <script src="js/public/d3.min.js"></script>
+    <script src="js/public/jszip.min.js"></script>
+    <script src="js/public/FileSaver.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bluebird/latest/bluebird.min.js"></script>
+
+    <!-- Main -->
+    <!-- <script src="js/script.js"></script> -->
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            console.log();
+            $('a[href="#Upload"]').click(function () {
+                $("html, body").animate({
+                    scrollTop: ($("#up").offset().top - $("#get_hight").height())
+                }, "show");
+            });
+            $('a[href="#Download"]').click(function () {
+                $("html, body").animate({
+                    scrollTop: ($("#dow").offset().top - $("#get_hight").height())
+                }, "show");
+            });
+            $('a[href="#Analysis"]').click(function () {
+                $("html, body").animate({
+                    scrollTop: ($("#ana").offset().top - $("#get_hight").height())
+                }, "show");
+            });
+            $('a[href="#Managment"]').click(function () {
+                $("html, body").animate({
+                    scrollTop: ($("#man").offset().top - $("#get_hight").height())
+                }, "show");
+            });
+
+        })
+    </script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="30">
+
+    <!-- Nav Menu -->
+
+    <div class="nav-menu fixed-top" id="get_hight">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-dark navbar-expand-lg">
+
+                        <img src="img/123.png" id="set_pine" alt="logo" />
+                        <!--   -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                            aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span
+                                class="navbar-toggler-icon"></span> </button>
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"> <a class="nav-link active" href="index.html">HOME </a> </li>
+                                <li class="nav-item"> <a class="nav-link " href="index.html">Tutorial</a> </li>
+                                <li class="nav-item"> <a class="nav-link " href="document.html">Document<span
+                                            class="sr-only">(current)</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link " href="https://140.115.54.213:9000">PINE
+                                        Server</a> </li>
+
+                                <li class="nav-item"> <a class="nav-link" href="">Source on Github</a> </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="demo">
+        <div id="demo_list">
+            <div id="column1">
+                <div>
+                    <ul class="listbar clearfix">
+                        <li class="listitem clearfix"><a href="#Upload"> Upload</a>
+                        </li>
+                        <li class="listitem clearfix"><a href='#Download'> Download</a>
+                        </li>
+                        <li class="listitem clearfix"><a href='#Analysis'> Analysis</a></li>
+                        </li>
+                        <li class="listitem clearfix"><a href='#Managment'> Managment</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="demo_content">
+            <!-- UPLOAD -->
+            <div class="content">
+                <div id="up" class="anchor">
+                    <p class="set_content_title_font_size"><b><u>Upload</u></b></p>
+                </div>
+                <div class="content set_content_title_font_size">
+                    <div>
+                        <p>
+                            This is a function to upload the training data.
+                        </p>
+                        <p>
+                    </div>
+                    <div>
+                        <p>STEP 1:</p>
+                    </div>
+                    <div>
+                        <p class="content">
+                            Users can choose the options which you want to upload in the Select Table.<br>
+                            Now, we choose the option 'Mnist dataset'
+                        </p>
+                        <div>
+                            <img class="image" src="img/upload/1.png">
+                        </div>
+
+
+                    </div>
+
+                    <div>
+                        <p>STEP 2:</p>
+                    </div>
+                    <div>
+                        <p class="content">
+                            When window shows up, users can click and drag the data to window.
+                        </p>
+                        <div>
+                            <img src="img/upload/2.png" class="image">
+                        </div>
+
+                    </div>
+                    <div>
+                        <p>STEP 3:</p>
+                    </div>
+                    <div>
+                        <p class="content">
+                            The progress bar will show on and it represents the progress of upload, and you can upload
+                            multiple data at the same time.
+                        </p>
+                        <div>
+                            <img src="img/upload/3.png" class="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Download -->
+            <div class="content">
+                <div id="dow">
+                    <p class="set_content_title_font_size">
+                        <b><u>Download</u></b>
+                    </p>
+                </div>
+                <div class="content set_content_title_font_size">
+                    <div>
+                        <p>
+                            This is a function to download the particular training data for PINE server.
+                        </p>
+                        <p>
+                    </div>
+                    <div>
+                        <p>STEP 1:</p>
+                    </div>
+                    <div>
+                        <p class="content">
+                            Select the table you want to download and set some attributes of it in the 'Select
+                            attributes' area.
+                            <br>
+                            Now, we choose the option 'Mnist dataset' and all of 'Select attributes'
+                        </p>
+                        <div>
+                            <img class="image" src="img/download/1.png">
+                        </div>
+                    </div>
+                    <div>
+                        <p>STEP 2:</p>
+                    </div>
+                    <div>
+                        <p class="content">
+                            Push 'X' of the selected attribute to delete what you don’t want.
+                            <br>
+                            Now, we delete the attribute 'raw'.
+                        </p>
+                        <div>
+                            <img class="image" src="img/download/3.png">
+                        </div>
+                    </div>
+                    <div>
+                        <p>STEP 3:</p>
+                    </div>
+                    <div>
+                        <p class="content">
+                            Push 'Search' button in the 'Select attributes' area to show the data below.
+                        </p>
+                        <div>
+                            <img class="image" src="img/download/2.png">
+                        </div>
+                    </div>
+                    <div>
+                        <p>STEP 4:</p>
+                    </div>
+                    <div>
+                        <p class="content">
+                            Add message in 'Search Data' area and push 'Search' button beside that to search particular
+                            data.
+                            Now, we input '1' in 'Search Data' and push 'Search' button.
+                        </p>
+                        <div>
+                            <img class="image" src="img/download/4.png">
+                        </div>
+                    </div>
+                    <div>
+                        <p>STEP 5:</p>
+                    </div>
+                    <div>
+                        <p class="content">
+                            Push 'Download' button to download these data to your computer.
+                        </p>
+                        <div>
+                            <img class="image" src="img/download/5.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ANALYSIS -->
+           
+            <div class="content">
+                <div id="ana">
+                    <p class="set_content_title_font_size">
+                        <b><u>Analysis</u></b>
+                    </p>
+                </div>
+                <div class="content set_content_title_font_size">
+                    <div>
+                        <p>
+                            The analyst enters the account with password in PINE and switches to the analysis page.
+                        </p>
+                        <p>
+                    </div>
+                    <div>
+                        <p>STEP 1:</p>
+                    </div>
+                    <div>
+                        <p class="content">
+                            Select the table and set some attributes of it in the 'Select
+                            attributes' area.After selecting, please push 'Search' button and then 
+                            result is below.
+                        </p>
+                        <div>
+                            <img class="image" src="img/analysis/1.png">
+                        </div>
+                    </div>
+                    <div>
+                        <p>STEP 2:</p>
+                    </div>
+                    <div>
+                        <p class="content">
+                            Select the 'Select preprocessing'.
+                        </p>
+                        <div>
+                            <img class="image" src="img/analysis/2.png">
+                        </div>
+                    </div>
+                    <div>
+                        <p>STEP 3:</p>
+                    </div>
+                    <div>
+                        <p class="content">
+                            In this step, you will choose many parameters, including 
+                            Select analysis type, Select model, validation, type,
+                            layers_num, neuron_num, activation, 
+                            dropout, output_layer, loss_function, optimizer and 
+                            batch_size, epoch.
+                        </p>
+                        <div>
+                            <img class="image" src="img/analysis/3.png">
+                        </div>
+                    </div>
+                    <div>
+                        <p>STEP 4:</p>
+                    </div>
+                    <div>
+                        <p class="content">
+                            The result will be showed.
+                        </p>
+                        <div>
+                            <img class="image" src="img/analysis/4.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- MANAGEMENT -->
+            <div class="content">
+                <div id="man">
+                    <p class="set_content_title_font_size">
+                        <b><u>Managment</u></b>
+                    </p>
+                </div>
+                <div class="content set_content_title_font_size">
+                    <div>
+                        <p>
+                            This is a function for managers to check users' permissions and change them.
+                        </p>
+                    </div>
+                    <div>
+                        <p>STEP 1:</p>
+                    </div>
+                    <div>
+                        <p class="content">
+                            Search the user you want to check or change his permissions and Click the user's name to
+                            enter 'edit' page.
+                            <br>
+                            Now, we choose the 'User1_1@test.com'
+                        </p>
+                        <div>
+                            <img class="image" src="img/management/1.png">
+                        </div>
+
+                    </div>
+                    <div>
+                        <p class="content">
+
+                        </p>
+                    </div>
+                    <div>
+                        <p>STEP 2:</p>
+                    </div>
+                    <div>
+                        <p class="content">
+                            Change his permission and push 'Update' button to confirm.
+                        </p>
+                        <div>
+                            <img class="image" src="img/management/2.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+</body>
+
+</html>

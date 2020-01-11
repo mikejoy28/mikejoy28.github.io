@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <!-- upload -->
+        <link href="../upload/css/upload.css" rel="stylesheet">
+        <!-- download -->
+        <link href="../download/css/download.css" rel="stylesheet">
+        <!-- analysis -->
+        <link rel="stylesheet" href="../analysis/css/a.css">
+
+
+        <!-- upload_demo -->
+        <script src="../upload/js/upload.js"></script>
+        <!-- Management_demo -->
+        <script type="text/javascript" src="../management/js/management_demo.js"></script>
+        <!-- Download_demo javascripts-->
+        <script type="text/javascript" src="../download/js/download_demo.js"></script>
+        <!-- Analysis_demo javascripts + css -->
+        <script type="text/javascript" src="../analysis/js/list.js"></script>
+        <script src="js/footer.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#upload").load("upload/upload_document.html");
+                $("#upload_demo").load("upload/upload_demo.html");
+                $("#download").load("download/download_document.html");
+                $("#download_demo2").load("download/download_demo.html");
+                $("#analysis").load("analysis/analysis.html");
+                $("#management").load("management/management_document.html");
+                $("#management_demo").load("management/management_demo.html");
+            })      
+        </script>
+    </head>
+
+    <body>
+            <div id="column2">
+                    <!-- upload -->
+                    <div>
+                        <div id="upload"></div>
+                        <div id="upload_demo"></div>
+                        
+                    </div>
+                    <!-- download -->
+                    <div>
+                        <div id="download"></div>
+                        <div id="download_demo2"></div>
+                    </div>
+                    <div>
+                        <div id="analysis"></div>
+                        <!-- <div id="analysis_demo"></div> -->
+                    </div>
+                    <!-- mangement -->
+                    <div>
+                        <div id="management"></div>
+                        <div id="management_demo"></div>
+                    </div>
+                </div>
+    </body>
+</html>
